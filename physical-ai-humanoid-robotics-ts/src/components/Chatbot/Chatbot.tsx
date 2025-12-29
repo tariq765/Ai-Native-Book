@@ -74,7 +74,7 @@ const ChatbotComponent: React.FC = () => {
       }
 
       // Call the backend API
-      const response = await fetch('http://localhost:8000/chat', {
+      const response = await fetch('https://ai-native-book-with-rag-chat-bot-production.up.railway.app/chat', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
