@@ -1,0 +1,61 @@
+========================================
+  SABSE AASAN TAREEQA - EK COMMAND
+========================================
+
+STEP 1: Terminal Kholo (CMD ya PowerShell)
+
+STEP 2: Ye command paste karo:
+
+-------- COPY THIS --------
+cd "C:\Users\Hp\OneDrive\Desktop\Book2" && start_single_terminal.bat
+---------------------------
+
+Ya phir:
+
+Double-click: start_single_terminal.bat
+
+
+YE KIYA HOGA:
+-------------
+1. Backend server chalu hoga (minimized window mein)
+2. 8 seconds wait karega
+3. Backend check karega
+4. Frontend chalu karega (same terminal mein)
+5. Browser automatically open hoga
+
+KYA DEKHEGA:
+------------
+- Backend minimized window mein chalega
+- Frontend logs is terminal mein dikhenge
+- Browser automatically khulega
+
+BAND KARNE KE LIYE:
+------------------
+- Main terminal window close karo
+- Ya Ctrl+C press karo
+
+
+TROUBLESHOOTING:
+----------------
+Agar chatbot response nahi de raha:
+
+1. Backend check karo:
+   curl http://localhost:8000
+
+2. Browser console check karo (F12)
+
+3. Backend window maximize karke errors dekho
+
+
+MANUAL START (Agar batch file kaam na kare):
+---------------------------------------------
+
+Terminal 1:
+cd "C:\Users\Hp\OneDrive\Desktop\Book2\rag_backend"
+python -m uvicorn main:app --host 0.0.0.0 --port 8000
+
+Terminal 2 (8 seconds baad):
+cd "C:\Users\Hp\OneDrive\Desktop\Book2\physical-ai-humanoid-robotics-ts"
+npm start
+
+========================================
